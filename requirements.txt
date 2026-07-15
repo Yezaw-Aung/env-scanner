@@ -1,0 +1,5 @@
+# env-guard has zero external dependencies.
+# It uses only the Python standard library (Python 3.8+).
+#
+# No pip install is required. This file is included for completeness
+# and to document the Python version requirement.

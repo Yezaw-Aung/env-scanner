@@ -1,0 +1,67 @@
+"""
+Sample input #2 — JavaScript + TypeScript files with mixed secrets and non-secrets.
+Run:  python3 -m src.main examples/js-ts-api-keys
+
+Expected secrets found (scan-only mode):
+
+======================================================================
+🛡️  ENV-GUARD: Cybersecurity Hardcoded Secret Scanner & Refactorer  🛡️
+======================================================================
+
+Mode: SCAN-ONLY
+Target Directory: /Users/yezawaung/MU/CS/cyber/asgn/env-scanner/examples/js-ts-api-keys
+Entropy Threshold: 4.5
+Min String Length: 8
+Scanning files recursively...
+
+[⚠️  CRITICAL] Potential secret detected!
+  File: credentials.js:5
+  String: "AKIAIOSFODNN7EXAMPLE"
+  Entropy: 3.684
+  Reason: Suspicious variable name
+  Variable: AWS_ACCESS_KEY_ID
+
+[⚠️  CRITICAL] Potential secret detected!
+  File: credentials.js:6
+  String: "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
+  Entropy: 4.663
+  Reason: Suspicious variable name
+  Variable: AWS_SECRET_ACCESS_KEY
+
+[⚠️  CRITICAL] Potential secret detected!
+  File: credentials.js:9
+  String: "sk_live_51Mza2b3c4d5e6f7g8h9i0j1k2l3m4n5o6p7q8r9s0t1u2v3w4x5y6z"
+  Entropy: 5.092
+  Reason: Suspicious variable name
+  Variable: STRIPE_SECRET_KEY
+
+[⚠️  CRITICAL] Potential secret detected!
+  File: frontend-config.ts:5
+  String: "AIzaSyDemo_99887766aBcDeFgHiJkLmNoPqRsTuVwXyZ1234567890"
+  Entropy: 5.217
+  Reason: Suspicious variable name
+  Variable: GOOGLE_MAPS_API_KEY
+
+[⚠️  CRITICAL] Potential secret detected!
+  File: frontend-config.ts:8
+  String: "pk_live_51Mza2b3c4d5e6f7g8h9i0j1k2l3m4n5o6p7q8r9s0t1u2v3w4x5y6z"
+  Entropy: 5.092
+  Reason: Suspicious variable name
+  Variable: STRIPE_PUBLISHABLE_KEY
+
+[⚠️  CRITICAL] Potential secret detected!
+  File: frontend-config.ts:11
+  String: "AIzaSyFirebase_99887766_aBcDeFgHiJkLmNoPqRsTuVwXyZ1234"
+  Entropy: 5.245
+  Reason: Suspicious variable name
+  Variable: FIREBASE_API_KEY
+
+
+======================================================================
+SCAN COMPLETED
+======================================================================
+🛡️  Mode: Scan-only
+📁 Files Scanned with Findings: 2
+⚠️  Total Secret Candidates Flagged: 6
+======================================================================
+"""

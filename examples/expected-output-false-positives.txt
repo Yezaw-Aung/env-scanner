@@ -1,0 +1,23 @@
+"""
+Sample input #3 — TypeScript file with false-positive edge cases.
+Run:  python3 -m src.main examples/false-positives
+
+======================================================================
+🛡️  ENV-GUARD: Cybersecurity Hardcoded Secret Scanner & Refactorer  🛡️
+======================================================================
+
+Mode: SCAN-ONLY
+Target Directory: /Users/yezawaung/MU/CS/cyber/asgn/env-scanner/examples/false-positives
+Entropy Threshold: 4.5
+Min String Length: 8
+Scanning files recursively...
+
+
+======================================================================
+SCAN COMPLETED
+======================================================================
+🛡️  Mode: Scan-only
+📁 Files Scanned with Findings: 0
+⚠️  Total Secret Candidates Flagged: 0
+======================================================================
+"""

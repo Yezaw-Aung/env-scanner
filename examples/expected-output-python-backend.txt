@@ -1,0 +1,39 @@
+"""
+Sample input #1 — a single Python file with mixed secrets and non-secrets.
+Run:  python3 -m src.main examples/python-backend
+
+Expected secrets found (scan-only mode):
+
+======================================================================
+🛡️  ENV-GUARD: Cybersecurity Hardcoded Secret Scanner & Refactorer  🛡️
+======================================================================
+
+Mode: SCAN-ONLY
+Target Directory: /Users/yezawaung/MU/CS/cyber/asgn/env-scanner/examples/python-backend
+Entropy Threshold: 4.5
+Min String Length: 8
+Scanning files recursively...
+
+[⚠️  CRITICAL] Potential secret detected!
+  File: config.py:13
+  String: "jwt_signing_secret_key_1234567890_abcdefg_XYZ_!!!!"
+  Entropy: 4.636
+  Reason: Suspicious variable name
+  Variable: JWT_SECRET
+
+[⚠️  CRITICAL] Potential secret detected!
+  File: config.py:16
+  String: "postgresql://db_admin:admin_P@ssw0rd_987654321@prod-db.cluster.internal:5432/production"
+  Entropy: 4.884
+  Reason: Suspicious variable name
+  Variable: DATABASE_URL
+
+
+======================================================================
+SCAN COMPLETED
+======================================================================
+🛡️  Mode: Scan-only
+📁 Files Scanned with Findings: 1
+⚠️  Total Secret Candidates Flagged: 2
+======================================================================
+"""
